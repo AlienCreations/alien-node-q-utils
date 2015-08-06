@@ -1,6 +1,6 @@
 {
   "name"            : "alien-node-q-utils",
-  "version"         : "0.0.2",
+  "version"         : "0.0.3",
   "description"     : "Helper functions for promises with Q on NodeJS",
   "main"            : "lib/Promises.js",
   "dependencies"    : {

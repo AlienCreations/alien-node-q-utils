@@ -78,3 +78,6 @@ otherwise resolve `deferred` with `data`.
       });
   });
 ```
+
+## TODO 
+ - Need specs and descriptions for new mapP methods
