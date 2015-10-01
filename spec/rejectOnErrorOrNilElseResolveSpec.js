@@ -3,7 +3,7 @@
 var R = require('ramda'),
     Q = require('q');
 
-var rejectOnErrorOrResolve = require('../lib/methods/rejectOnErrorOrResolve');
+var rejectOnErrorOrResolve = require('../lib/methods/rejectOnErrorOrNilElseResolve');
 
 var mockPromiseNoError = function(resolveWith) {
   var deferred = Q.defer();
@@ -31,14 +31,14 @@ describe('rejectOnErrorOrResolve', function() {
     });
   });
 
-  it('should reject a promise when resolveWith is null [Nil]', function() {
+  it('should reject a promise when resolveWith is null [Nil]', function(done) {
     mockPromiseNoError(FAKE_RESOLVE_WITH_NULL).catch(function(err) {
       expect(err).toBe(undefined);
       done();
     })
   });
 
-  it('should reject a promise when resolveWith is undefined [Nil]', function() {
+  it('should reject a promise when resolveWith is undefined [Nil]', function(done) {
     mockPromiseNoError(FAKE_RESOLVE_WITH_UNDEFINED).catch(function(err) {
       expect(err).toBe(undefined);
       done();
