@@ -1,11 +1,11 @@
 {
   "name"            : "alien-node-q-utils",
-  "version"         : "1.0.1",
+  "version"         : "1.0.2",
   "description"     : "Helper functions for promises with Q on NodeJS",
   "main"            : "lib/Promises.js",
   "dependencies"    : {
-    "ramda"       : "^0.18.x",
-    "q"           : "^2.0.x"
+    "ramda" : "^0.19.x",
+    "q"     : "^2.0.x"
   },
   "devDependencies" : {
     "coveralls" : "^2.11.2",
